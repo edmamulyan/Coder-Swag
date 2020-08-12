@@ -22,11 +22,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Zoh-8r-QtU">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Zoh-8r-QtU">
                                 <rect key="frame" x="0.0" y="69.5" width="414" height="738.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="177" id="mbZ-ly-Bpl" customClass="CategoryCell" customModule="Coder_Swag" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="177" id="mbZ-ly-Bpl" customClass="CategoryCell" customModule="Coder_Swag" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="177"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mbZ-ly-Bpl" id="6gP-78-wyC">
@@ -34,7 +34,11 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="c9d-No-Sdf">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="177"/>
+                                                    <rect key="frame" x="0.0" y="3" width="414" height="171"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="414" id="cdO-WL-Pnc"/>
+                                                        <constraint firstAttribute="height" constant="155" id="lMU-MH-6dp"/>
+                                                    </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOODIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="89c-NV-IVN">
                                                     <rect key="frame" x="129" y="74.5" width="156" height="28"/>
@@ -52,8 +56,8 @@
                                                 <constraint firstAttribute="trailing" secondItem="c9d-No-Sdf" secondAttribute="trailing" id="HYT-y5-Jf4"/>
                                                 <constraint firstItem="c9d-No-Sdf" firstAttribute="leading" secondItem="6gP-78-wyC" secondAttribute="leading" id="lyW-PL-9FY"/>
                                                 <constraint firstItem="89c-NV-IVN" firstAttribute="centerX" secondItem="6gP-78-wyC" secondAttribute="centerX" id="sGb-pD-yRq"/>
-                                                <constraint firstAttribute="bottom" secondItem="c9d-No-Sdf" secondAttribute="bottom" id="vt0-3M-TlV"/>
-                                                <constraint firstItem="c9d-No-Sdf" firstAttribute="top" secondItem="6gP-78-wyC" secondAttribute="top" id="vzo-eT-Sum"/>
+                                                <constraint firstAttribute="bottom" secondItem="c9d-No-Sdf" secondAttribute="bottom" constant="3" id="vt0-3M-TlV"/>
+                                                <constraint firstItem="c9d-No-Sdf" firstAttribute="top" secondItem="6gP-78-wyC" secondAttribute="top" constant="3" id="vzo-eT-Sum"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
